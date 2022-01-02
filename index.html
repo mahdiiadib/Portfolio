@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- link css  -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Bootstrap CSS -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+  <title>My Portfolio</title>
+</head>
+
+
+
+<!------------------------------------------ Firebase start------------------------------------------>
+
+<!-- Contact Form DB-->
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAyrX3qXi1G8VeY6AvQLor2rgsVAtkurcA",
+    authDomain: "webdev-project-8c412.firebaseapp.com",
+    databaseURL: "https://webdev-project-8c412-default-rtdb.firebaseio.com",
+    projectId: "webdev-project-8c412",
+    storageBucket: "webdev-project-8c412.appspot.com",
+    messagingSenderId: "747133091243",
+    appId: "1:747133091243:web:fb544f22af0531511666ee",
+    measurementId: "G-B146G5JK6W"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src="js/contactForm.js"></script>
+
+<!------------------------------------------ Firebase end------------------------------------------>
+
+
+
+
+<style>
+  
+
+  
+</style>
+
+
+
+
+<!-- <body style="background-color: rgba(19, 17, 17, 0.98); font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> -->
+
+<body
+  style="background-image: url('images/aurora_borealis_over_mountains.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%; background-color: rgba(15, 14, 14, 0.98); background-blend-mode: overlay; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+
+  <!------------------------------------------ NAV STARTS ------------------------------------------>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: fixed; width: 100%;">
+    <div class="container-fluid">
+      <a class="navbar-brand text" href="#" style="color: salmon;"><b>Mahdi Adib</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="myprojects.html">My Projects</a>
+          </li>
+
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li> -->
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!------------------------------------------ NAV ENDS ------------------------------------------>
+
+
+
+
+
+  <!------------------------------------------ HOME STARTS ------------------------------------------>
+  <section id="home">
+
+    <!-- Left Side Starts-->
+    <div class="float-start mt-5 mx-5 col-4">
+      <div class="thumbnail mt-5">
+        <div class="inner-img mt-5">
+          <img src="images/me2_up.png" style="border-radius: 5%;" />
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- Left Side Ends -->
+
+
+    <!-- Right Side Starts -->
+    <div class="row align-items-center">
+
+      <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+      <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+      <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+      <div class="col-lg-8 offset-lg-2">
+        <div class="container-fluid">
+          <h6 class="text-uppercase" style="color: aliceblue;">hi there !</h6>
+          <h1 class="text-uppercase" style="color: indianred;"><span style="color: aliceblue;">I'm</span> Mahdi Adib
+          </h1>
+          <p style="color: aliceblue;">
+            I am now a university student interested in game development, desktop app develpoment and 3d art.
+            I learnt most of the things from various online platforms like youtube, google, udemy and many
+            more.
+            I’m currently learning c++, c#, java alongside blender and unity so that I can become a professional
+            software developer and a 3d artist.
+            I am also interested to learn website development and I have plans to learn it in the future.
+          </p>
+          <br>
+          <a href="#about" class="moreButt" onclick="meh()">More About Me</a> <!-- rgba(220,53,69,255) -->
+        </div>
+      </div>
+    </div>
+    <!-- Right Side Ends -->
+
+  </section>
+  <!------------------------------------------ HOME ENDS ------------------------------------------>
+
+
+
+
+
+  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+
+
+
+
+  <!------------------------------------------ ABOUT STARTS ------------------------------------------>
+  <section id="about">
+
+    <!-- Page Title Starts -->
+    <section class="text-sm-center">
+      <h1 style="color: aliceblue; font-size: 4vw;"><b>ABOUT <span style="color: indianred">ME</span></b></h1>
+      <span class="title_bg">Resume</span>
+    </section>
+    <!-- Page Title Ends -->
+
+
+    <br> <br> <br> <br>
+
+
+    <!-- Main Content Starts -->
+    <div class="container">
+      <div class="row">
+
+        <!-- Personal Info Starts -->
+        <div class="col-12 col-lg-5 col-xl-6">
+          <div class="row">
+            <div class="col-6">
+              <ul style="list-style: none;">
+                <li>
+                  <h3 class="text-uppercase" style="color: aliceblue;">personal infos</h3>
+                  <br> <br>
+                </li>
+                <li> <span style="color: darkgray;">First Name :</span> <span
+                    style="color: whitesmoke;"><b>Mahdi</b></span> </li>
+                <br>
+                <li> <span style="color: darkgray;">Last Name :</span> <span
+                    style="color: whitesmoke;"><b>Adib</b></span> </li>
+                <br>
+                <li> <span style="color: darkgray;">Age :</span> <span style="color: whitesmoke;"><b>21 Years</b></span>
+                </li>
+                <br>
+                <li> <span style="color: darkgray;">Nationality :</span> <span
+                    style="color: whitesmoke;"><b>Bangladeshi</b></span> </li>
+                <br>
+                <li> <span style="color: darkgray;">Languages :</span> <span style="color: whitesmoke;"><b>Bangla,
+                      English</b></span> </li>
+                <br>
+                <li> <span style="color: darkgray;">Religion :</span> <span
+                    style="color: whitesmoke;"><b>Islam</b></span> </li>
+                <br>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul style="list-style: none;">
+                <br> <br> <br> <br>
+                <li> <span style="color: darkgray;">Address :</span> <span
+                    style="color: whitesmoke;"><b>Bangladesh</b></span> </li>
+                <br>
+                <li> <span style="color: darkgray;">Phone :</span> <span
+                    style="color: whitesmoke;"><b>+8801710311999</b></span> </li>
+                <br>
+                <li> <span style="color: darkgray;">Email :</span> <span
+                    style="color: whitesmoke;"><b>mahdiadib2001@gmail.com</b></span> </li>
+                <br>
+              </ul>
+            </div>
+            <div class="">
+              <a href="#about" class="downloadButt">Download Resume</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Personal Info Ends -->
+
+      <br> <br> <br> <br>
+
+      <!-- Education Starts -->
+
+      <div class="col-12">
+        <h3 class="text-uppercase text-left text-sm-center custom-title ft-wt-600" style="color: aliceblue;">Education
+        </h3>
+        <center>
+          <hr style="height: 2px; width: 500px;  color:gray; background-color:gray">
+        </center>
+      </div>
+
+      <!-- cesc -->
+      <div class="card-collection-edu py-5">
+
+        <div class="cardx">
+          <div class="py-3">
+
+            <div class="icon container">
+              <a href="https://cesc.edu.bd/" target=_blank>
+                <button class="btn btn-outline-secondary">
+                  <i class="fa fa-graduation-cap" style="color: gold;"></i>
+                </button>
+              </a>
+              <br>
+              <span style="color: gray;">2005-2012</span>
+            </div>
+          </div>
+          <div class="image">
+            <img src="images/cesclogo.png" height="200px" />
+          </div>
+          <div>
+            <h6 class="ps-3" style="color: indianred">Started School</h6>
+            <h3 class="ps-3 text-uppercase" style="color: honeydew;">Cantonment English School & College</h3>
+          </div>
+          <div class="container">
+            <p style="color: aliceblue;" style="color: aliceblue;">My first school is Cantonment English School &
+              College! It is situated in Chittagong cantonment. I studied there from nursery to class six.</p>
+          </div>
+        </div>
+
+        <!-- bisc -->
+        <div class="cardx">
+          <div class="py-3">
+            <div class="icon container">
+              <a href="https://bisc.com.bd/" target=_blank>
+                <button class="btn btn-outline-secondary">
+                  <i class="fa fa-graduation-cap" style="color: gold;"></i>
+                </button>
+              </a>
+              <br>
+              <span style="color: gray;">2013-2017</span>
+            </div>
+          </div>
+          <div class="image">
+            <img src="images/bislogo.png" height="200px" />
+          </div>
+          <div>
+            <h6 class="ps-3" style="color: indianred">Completed School</h6>
+            <h3 class="ps-3 text-uppercase" style="color: honeydew;"> Bangladesh International School & College</h3>
+          </div>
+          <div class="container">
+            <p style="color: aliceblue;" style="color: aliceblue;">I studied in Bangladesh International School &
+              College from class seven to class ten. It is situated in Mohakhali DOHS, Dhaka.</p>
+          </div>
+        </div>
+
+        <!-- ndc -->
+        <div class="cardx">
+          <div class="py-3">
+            <div class="icon container">
+              <a href="https://ndc.edu.bd/" target=_blank>
+                <button class="btn btn-outline-secondary">
+                  <i class="fa fa-graduation-cap" style="color: gold;"></i>
+                </button>
+              </a>
+              <br>
+              <span style="color: gray;">2017-2019</span>
+            </div>
+          </div>
+          <div class="image">
+            <img src="images/Notre_dame_college_dhaka_logo.png" height="200px" />
+          </div>
+          <div>
+            <h6 class="ps-3" style="color: indianred">Completed College</h6>
+            <h3 class="ps-3 text-uppercase" style="color: honeydew;"> Notre Dame College</h3>
+          </div>
+          <div class="container">
+            <p class="" style="color: aliceblue;">I went to Notre Dame College from where I passed my HSC exam. It is
+              situated in Motijheel, Dhaka.</p>
+          </div>
+        </div>
+
+        <!-- mist -->
+        <div class="cardx">
+          <div class="py-3">
+            <div class="icon container">
+              <a href="https://www.mist.ac.bd/" target=_blank>
+                <button class="btn btn-outline-secondary">
+                  <i class="fa fa-graduation-cap" style="color: gold;"></i>
+                </button>
+              </a>
+              <br>
+              <span style="color: gray;">2020-Present(2022)</span>
+            </div>
+          </div>
+          <div class="image">
+            <img src="images/1200px-MIST.svg.png" height="200px" />
+          </div>
+          <div>
+            <h6 class="ps-3" style="color: indianred">Bachelor Degree</h6>
+            <h3 class="ps-3 text-uppercase" style="color: honeydew;"> Military Institute of Science and Technology</h3>
+          </div>
+          <div class="container">
+            <p class="" style="color: aliceblue;">I studied Computer Science from Military Institute of Science and
+              Technology. It is located in Mirpur DOHS, Dhaka.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Education Ends-->
+
+    </div>
+
+
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+
+    <!-- Skills Starts -->
+    <section class="skills" id="skills">
+
+      <div class="text-sm-center">
+        <h1 style="color: aliceblue; "><b>MY EXPERTISE</b></h1>
+      </div>
+
+      <div>
+        <div>
+          <img src="images/Blender_logo_no_text.svg.png" class="icon icon-card" />
+          <img src="images/unity-logo.png" alt="" loading="lazy" class="icon icon-card" />
+          <img src="images/unreal.png" alt="" loading="lazy" class="icon icon-card" />
+        </div>
+
+        <div>
+          <img src="images/c++logo.png" class="icon icon-card" />
+          <img src="images/csharp_logo.png" class="icon icon-card" />
+          <!-- <img src="assets/icons/icons8-git.svg" alt="" loading="lazy" class="icon icon-card" /> -->
+        </div>
+      </div>
+    </section>
+    <!-- Skills Ends -->
+
+
+
+
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+
+
+
+    <!-- Sample projects starts -->
+    <div class="container">
+
+      <div class="col-12">
+        <h3 class="text-uppercase text-left text-sm-center custom-title ft-wt-600" style="color: aliceblue;">MY PROJECTS
+        </h3>
+        <center>
+          <hr style="height: 2px; width: 500px;  color:gray; background-color:gray">
+        </center>
+      </div>
+
+
+      <div class="card-collection-proj py-5">
+
+        <div class="cardx">
+          <div class="image">
+            <img src="images/utah.jpg" />
+          </div>
+          <div>
+            <h6 class="container" style="color: indianred">Lorem</h6>
+            <h3 class="container text-uppercase" style="color: honeydew;">Lorem</h3>
+          </div>
+          <div class="container">
+            <p style="color: aliceblue;" style="color: aliceblue;">Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Quibusdam
+              perspiciatis sunt iure quia ducimus ipsam fugiat dolorum quisquam nostrum. Magnam quo unde veritatis illo
+              nesciunt repudiandae
+              commodi iste ipsa officiis!
+            </p>
+          </div>
+          <div class="text-white">
+            <div class="text-danger">
+              <span class="container"><a href="project.html" style="text-decoration: none; color: goldenrod;">Show
+                  More</a></span>
+              <span class="arrow">
+                <i class="fas fa-angle-down"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="cardx">
+          <div class="image">
+            <img src="images/forest_fog_trees.jpg" />
+          </div>
+          <div>
+            <h6 class="container" style="color: indianred">Lorem</h6>
+            <h3 class="container text-uppercase" style="color: honeydew;">Lorem</h3>
+          </div>
+          <div class="container">
+            <p style="color: aliceblue;" style="color: aliceblue;">Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Quibusdam
+              perspiciatis sunt iure quia ducimus ipsam fugiat dolorum quisquam nostrum. Magnam quo unde veritatis illo
+              nesciunt repudiandae
+              commodi iste ipsa officiis!
+            </p>
+          </div>
+          <div class="text-white">
+            <div class="text-danger">
+              <span class="container"><a href="project.html" style="text-decoration: none; color: goldenrod;">Show
+                  More</a></span>
+              <span class="arrow">
+                <i class="fas fa-angle-down"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardx">
+          <div class="image">
+            <img src="images/quebec2.jpg" />
+          </div>
+          <div>
+            <h6 class="container" style="color: indianred">Lorem</h6>
+            <h3 class="container text-uppercase" style="color: honeydew;">Lorem</h3>
+          </div>
+          <div class="container">
+            <p style="color: aliceblue;" style="color: aliceblue;">Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Quibusdam
+              perspiciatis sunt iure quia ducimus ipsam fugiat dolorum quisquam nostrum. Magnam quo unde veritatis illo
+              nesciunt repudiandae
+              commodi iste ipsa officiis!
+            </p>
+          </div>
+          <div class="text-white">
+            <div class="text-danger">
+              <span class="container"><a href="project.html" style="text-decoration: none; color: goldenrod;">Show
+                  More</a></span>
+              <span class="arrow">
+                <i class="fas fa-angle-down"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="display: flex; justify-content: center;">
+        <a href="myprojects.html" class="moreButt">View More</a>
+      </div>
+
+    </div>    
+    <!-- Sample projects starts -->
+
+
+    <!-- Main Content Ends -->
+
+  </section>
+  <!------------------------------------------ ABOUT ENDS ------------------------------------------>
+
+
+
+
+
+  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+
+
+
+
+  <!------------------------------------------ CONTACT STARTS ------------------------------------------>
+  <section id="contact">
+
+    <!-- Page Title Starts -->
+    <section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+      <h1 style="color: aliceblue; font-size: 4vw;"><b>GET IN <span style="color: indianred">TOUCH</span></b></h1>
+      <span class="title_bg">contact</span>
+      <br> <br> <br>
+    </section>
+    <!-- Page Title Ends -->
+
+
+    <!-- Main Content Starts -->
+    <section class="main-content revealator-slideup revealator-once revealator-delay1">
+      <div class="container">
+        <div class="row">
+
+          <!-- Left Side Starts -->
+          <div class="col-12 col-lg-4">
+            <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3" style="color: aliceblue;"> <b>Don't be shy !</b>
+            </h3>
+            <p style="color: aliceblue;">Feel free to get in touch with me. I am always open to discussing new projects,
+              creative ideas or opportunities to be part of your visions.</p>
+
+            <p class="icon">
+              <i class="fa fa-envelope-open" style="color: gold;"></i>
+              <span class="d-flex" style="color: gray;">EMAIL ME</span>
+              <span style="color: whitesmoke;"><b>mahdiadib2001@gmail.com</b></span>
+
+              <br> <br>
+
+              <i class="fa fa-phone-square" style="color: gold;"></i>
+              <span class="d-flex" style="color: gray;">CALL ME</span>
+              <span style="color: whitesmoke;"><b>+8801710-311999</b></span>
+            </p>
+
+            <!-- Find Me On starts-->
+            <br> <br>
+            <span class="d-flex" style="color: lightsteelblue;">Find Me On</span>
+            <button class="fbButt" style="border-radius: 50%; width: 4vw; height: 4vw;">
+              <a title="Facebook" href="#contact"> <i class="fab fa-facebook-f" style="color: dodgerblue;"></i></a>
+            </button>
+            <button class="ytButt" style="border-radius: 50%; width: 4vw; height: 4vw;">
+              <a title="Youtube" href="#contact"> <i class="fab fa-youtube" style=" color: firebrick;"></i></a>
+            </button>
+            <button class="gitButt" style="border-radius: 50%; width: 4vw; height: 4vw;">
+              <a title="Github" href="#contact" contact> <i class="fab fa-github" style="color: blueviolet;"></i></a>
+            </button>
+            <button class="discButt" style="border-radius: 50%; width: 4vw; height: 4vw;">
+              <a title="Discord" href="#contact"> <i class="fab fa-discord" style="color: cornflowerblue;"></i></a>
+            </button>
+          </div>
+          <!-- Find Me On ends-->
+
+          <!-- Left Side Ends -->
+
+
+          <!-- Right Form Starts -->
+          <div class="col-12 col-lg-8">
+            <!-- <form method="post" action=""> -->
+              <div class="contactform">
+                <div class="row">
+
+                  <div class="col-12 col-md-4">
+                    <input type="text" id="name" placeholder="YOUR NAME" class="ip1">
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <input type="email" id="email" placeholder="YOUR EMAIL" class="ip1">
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <input type="text" id="subject" placeholder="YOUR SUBJECT" class="ip1">
+                  </div>
+                  <br> <br> <br>
+                  <div class="col-12">
+                    <textarea id="message" placeholder="YOUR MESSAGE" class="ip2"></textarea>
+                    <br> <br> <br>
+                    <button type="button" class="sendButt" onclick="store_contact()"><b>Send Message</b></button>
+                  </div>
+
+                </div>
+              </div>
+            <!-- </form> -->
+          </div>
+          <!-- Right Form Ends -->
+
+    </section>
+
+  </section>
+  <!------------------------------------------ CONTACT ENDS ------------------------------------------>
+
+
+
+
+
+  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+
+
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+
+
+
+
+<!------------------------------------------ Footer Starts ------------------------------------------>
+<br>
+<div class="rn-footer-area rn-section-gap section-separator p-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="footer-area pt-5 text-center">
+          <div class="logo">
+            <a href="index.html">
+              <img height="180px" width="180px" src="images/me1.jpeg" style="border-radius: 50%;" />
+            </a>
+          </div>
+
+          <p class="description text-white mt-5">
+            © 2021. All Rights Reserved By
+            <a class="text-white" href="index.html">Mahdi Adib.</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!------------------------------------------ Footer Ends ------------------------------------------>
+
+
+</html>
