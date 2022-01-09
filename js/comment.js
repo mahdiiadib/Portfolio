@@ -11,8 +11,12 @@ function timeNow() {
     return dateTime;
 }
 
+
+const img_arr=["avatar-penguin.png", "unknown-user.png", "sunglass.jpg", "ninja-avatar.png", "Humpty_Dumpty.png", "avatar-icon-red-clipart.png"];
+
 function store_comment() {
     // alert("meh");
+    var rnd=Math.floor((Math.random() * 6));
 
     var _name = document.getElementById("name").value;
     var _email = document.getElementById("email").value;
@@ -22,12 +26,14 @@ function store_comment() {
     var now = timeNow();
     console.log(now);
     // alert(now);
+    var _avatar=img_arr[rnd];
 
     firebase.database().ref('User/Comment/' + now).set({
         name: _name,
         email: _email,
         comment: _comment,
-        time: now
+        time: now,
+        avatar: _avatar
     },
         function (error) {
             if (error) {
@@ -77,7 +83,7 @@ function store_comment() {
 // }
 
 
-function DisplayItems(_name, _email, _comment, _time) {
+function DisplayItems(_name, _email, _comment, _time, _avatar) {
 
     var Div = document.getElementById('commentList');
     var div = document.createElement('div');
@@ -93,13 +99,21 @@ function DisplayItems(_name, _email, _comment, _time) {
     div.style.opacity = "90%";
     div.style.borderRadius = "1.5%";
 
-    var image = document.createElement('img');
-    image.src = "images/unknown-user.png";
-    image.className = "rounded-circle";
-    image.style.width = "40", image.style.height = "40";
+    // var image = document.createElement('img');
+    // image.src = "images/unknown-user.png";
+    // image.className = "rounded-circle";
+    // image.style.width = "40", image.style.height = "40";
 
-    Div.appendChild(image);
-    div.innerHTML = `<h4 style='color: goldenrod;'>${_name}</h4> <span style='color: gray;'> ${_time}<br></span> <br> <p style='color: honeydew; '>${_comment}</p>`
+    // Div.appendChild(image);
+    // div.innerHTML = `<big style='color: goldenrod;'><b><font size='+3'>${_name}</font></b></big> <span style='color: gray;'><small>${_email}</small><br></span> <span style='color: gray;'><small>${_time}</small><br></span> <br> <p style='color: honeydew; '>${_comment}</p>`
+    
+    div.innerHTML = `<span style='color: gray;'><small>${_time}</small><br></span>
+                    <img src="images/${_avatar}" class="rounded-circle" width="45px">
+                    <big style='color: goldenrod;'><b><font size='+3'>${_name}</font></b></big>
+                    <span style='color: gray;'><sub>${_email}</sub></span>
+                    <br><br>
+                    <p><font size='+1' style='font-family: cursive;'>${_comment}</font></p>`
+                    
     Div.appendChild(div);
 }
 
@@ -113,10 +127,9 @@ function FetchAllComments() {
             var o = child.val().email;
             var c = child.val().comment;
             var t = child.val().time;
-            // s += n + " " + o + " " + c + " " + t + "\n";
-            // alert(n + " "+ o+ " "+ c + " "+ t);
+            var av= child.val().avatar;
 
-            DisplayItems(n, o, c, t);
+            DisplayItems(n, o, c, t, av);
 
         });
         // alert(s);
