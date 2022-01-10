@@ -164,10 +164,10 @@ function DisplayItems(_name, _email, _subject, _message, _time, _avatar) {
   div.style.opacity = "90%";
   div.style.borderRadius = "1.5%";
 
-  var image = document.createElement('img');
-  image.src = "images/unknown-user.png";
-  image.className = "rounded-circle";
-  image.style.width = "40", image.style.height = "40";
+  // var image = document.createElement('img');
+  // image.src = "images/unknown-user.png";
+  // image.className = "rounded-circle";
+  // image.style.width = "40", image.style.height = "40";
 
   // Div.appendChild(image);
   // div.innerHTML = `<big style='color: goldenrod;'><b><font size='+3'>${_name}</font></b></big> <br> <span style='color: gray;'><small>${_email}</small><br></span> <span style='color: gray;'><small>${_time}</small><br></span> <br> <p style='color: honeydew; '>${_comment}</p>`
