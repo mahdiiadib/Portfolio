@@ -106,9 +106,11 @@ function store_contact() {
       }
       else {
         alert("SENT");
+        window.location.reload();
       }
 
     });
+
 }
 
 

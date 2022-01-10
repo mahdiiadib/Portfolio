@@ -42,6 +42,7 @@ function store_comment() {
             }
             else {
                 alert("SENT");
+                window.location.reload();
             }
 
         });
